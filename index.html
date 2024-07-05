@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Banner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            height: 25vh; /* 30% of the viewport height */
+            padding: 20px 0;
+            position: relative;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #007bff, #ff5722, #00c853);
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        .logo-container img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        .logo-container svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: rotate 10s linear infinite;
+        }
+        .logo-container text {
+            font-family: 'Arial', sans-serif;
+            font-size: 8px;
+            fill: #fff;
+            font-weight: bold;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .banner h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .banner p {
+            margin: 10px 0 20px;
+            font-size: 0.8em;
+        }
+        /*
+        .banner .btn {
+            background-color: #ff5722;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+            */
+    </style>
+    
+</head>
+<body>
+    <div class="banner">
+        <div class="logo-container">
+            <img src="https://avatars.githubusercontent.com/u/132825905?v=4" alt="Olaoluwa Ayidina">
+            <svg viewBox="0 0 60 60">
+                <path id="curve" d="M15,30 a1,1 0 0,1 30,0" fill="transparent"/>
+                <text width="150">
+                    <textPath href="#curve" startOffset="50%">
+                        Betzycoded
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <h1>Olaoluwa Ayidina</h1>
+        <p>Full Stack Developer | ALX SE Student</p>
+        <!-----
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+    -->
+    </div>
+</body>
+</html>
